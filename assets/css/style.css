@@ -78,3 +78,76 @@ background-size: cover;
 .navbar-nav {
     margin-right: 5rem;
 }
+.logo {
+    color:white;
+    animation: blinker 5s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  .work {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+   
+}
+.work-text {
+    width: 20%;
+    padding: 20px;
+    margin: 10px 10px 100px 20px;
+    order: 0;
+    text-align: center;
+    border: 2px solid white;
+    text-decoration: underline;
+}
+.work-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /*justify-content: space-evenly;
+    align-content: center;*/
+    margin: 20px;
+    
+}
+.work-container img {
+    width: 250px;
+    height: 250px;
+    margin: 15px;
+    
+}
+.work-box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 1rem;
+    border: 2px solid white;
+    margin: 10px;
+    background-color: #A0A0A0;
+    
+}
+.box-header {
+    position: relative;
+    border: 2px dashed white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 1rem;
+    transition: all 2s ease-in-out;
+}
+
+/*added class thumbnail to the html and created a css element to achieve the work images transforming in scale when the user's mouse hovers over*/
+.thumbnail {
+    padding: 10px;
+    transition: transform .2s;
+    width: 500px;
+    height: 500px;
+    display: block;
+}
+.thumbnail:hover {
+    transform: scale(1.3);
+}
